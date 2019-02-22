@@ -1,0 +1,193 @@
+/* adaptaciones del contenedor*/
+
+.contenedor { width:100%; 
+    max-width: 1600px; 
+    margin: auto;
+    align-self: center;
+}
+
+
+
+/* tipografia y color fondo web*/
+
+body{color: white; 
+  background: linear-gradient( black,black, rgb(6, 59, 10), rgb(110, 6, 77), rgb(133, 80, 10));
+}
+
+
+/*menu*/
+.topnav { 
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    padding: 0;
+    list-style: none;
+    background: linear-gradient(  rgb(104, 8, 74), black, rgb(145, 13, 112)); 
+    border-radius: 9%; 
+    border:5px solid rgb(215, 12, 12); 
+    margin: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.topnav li {text-align: center;
+    font-size: 15px;
+}
+
+.topnav li a {color: #f2f2f2;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.topnav li:hover a { background-color: rgb(192, 204, 17);
+    color: black;  
+}
+
+
+.topnav .icon {
+    display: none; 
+}
+  
+
+@media screen and (max-width: 600px) {
+    .topnav li {display: none;}
+    .topnav li.icon {
+      margin-left: auto;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative; flex-direction: column;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    
+    .topnav.responsive li {
+        display: block;
+        text-align: left;
+        
+      }
+    }
+/* seccion peliculas*/
+ * {
+  box-sizing: border-box; 
+}
+
+.row{ padding-top: 10%;
+
+}
+
+.column {
+  float: left;
+  padding: 20px;
+  margin-bottom: 10px;
+  border:5px solid rgb(201, 137, 19); 
+  background-color:transparent; 
+  
+}
+
+
+}
+
+h2{ font-family: 'ZCOOL KuaiLe'; 
+}
+
+.column p { font-family: Arial, Helvetica, sans-serif;font-size: 15px; text-align: justify; 
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+@media screen and (max-width: 1600px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* formulario */ 
+
+form{ text-align: center; 
+   margin: 12%;
+   border:10px solid rgb(12, 45, 194); 
+   background: url(img/gaspar2.jpg);  
+   margin-bottom: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* pie de pagina */ 
+
+.pie {background-color: rgb(250, 12, 12); 
+    height: 20px; 
+    font-size: 13px; 
+    font-style: Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
+
+/* quien es-- secciones*/
+
+.qe{text-align: center; 
+  width: 100%;
+  font-family: 'ZCOOL KuaiLe';
+  font-size: 18px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+/*video de entrevista*/
+
+.entrevistagaspar{display: flex; 
+  justify-content: center; 
+  
+}
+
+.entrevista1{width: 300px; 
+height: 300px;
+border-radius: 50%; 
+border:5px solid rgb(12, 218, 22); 
+padding: 2%;
+display: flex; 
+justify-content: center; 
+}
+
+/* estilo --- secciones*/
+
+.es{text-align: center; 
+  width: 100%;
+  font-family: 'ZCOOL KuaiLe';
+  font-size: 18px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+/* video de estilo*/
+
+.cancion{display: flex; 
+  justify-content: center; 
+  
+}
+.videoclip{width: 300px; 
+  height: 300px;
+  border-radius: 50%; 
+  border:5px solid rgb(199, 33, 171); 
+  padding: 2%;
+  }
+
+
+
